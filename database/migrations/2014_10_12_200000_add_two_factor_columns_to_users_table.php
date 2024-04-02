@@ -3,7 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
-use Laravel\Fortify\Fortify;
+use Jiny\Fortify\Fortify;
 
 return new class extends Migration
 {

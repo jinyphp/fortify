@@ -1,16 +1,16 @@
 <?php
 
-namespace Laravel\Fortify\Http\Controllers;
+namespace Jiny\Fortify\Http\Controllers;
 
 use Illuminate\Contracts\Auth\PasswordBroker;
 use Illuminate\Contracts\Support\Responsable;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\Password;
-use Laravel\Fortify\Contracts\FailedPasswordResetLinkRequestResponse;
-use Laravel\Fortify\Contracts\RequestPasswordResetLinkViewResponse;
-use Laravel\Fortify\Contracts\SuccessfulPasswordResetLinkRequestResponse;
-use Laravel\Fortify\Fortify;
+use Jiny\Fortify\Contracts\FailedPasswordResetLinkRequestResponse;
+use Jiny\Fortify\Contracts\RequestPasswordResetLinkViewResponse;
+use Jiny\Fortify\Contracts\SuccessfulPasswordResetLinkRequestResponse;
+use Jiny\Fortify\Fortify;
 
 class PasswordResetLinkController extends Controller
 {
@@ -18,7 +18,7 @@ class PasswordResetLinkController extends Controller
      * Show the reset password link request view.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @return \Laravel\Fortify\Contracts\RequestPasswordResetLinkViewResponse
+     * @return \Jiny\Fortify\Contracts\RequestPasswordResetLinkViewResponse
      */
     public function create(Request $request): RequestPasswordResetLinkViewResponse
     {

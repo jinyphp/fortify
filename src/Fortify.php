@@ -1,19 +1,19 @@
 <?php
 
-namespace Laravel\Fortify;
+namespace Jiny\Fortify;
 
-use Laravel\Fortify\Contracts\ConfirmPasswordViewResponse;
-use Laravel\Fortify\Contracts\CreatesNewUsers;
-use Laravel\Fortify\Contracts\LoginViewResponse;
-use Laravel\Fortify\Contracts\RegisterViewResponse;
-use Laravel\Fortify\Contracts\RequestPasswordResetLinkViewResponse;
-use Laravel\Fortify\Contracts\ResetPasswordViewResponse;
-use Laravel\Fortify\Contracts\ResetsUserPasswords;
-use Laravel\Fortify\Contracts\TwoFactorChallengeViewResponse;
-use Laravel\Fortify\Contracts\UpdatesUserPasswords;
-use Laravel\Fortify\Contracts\UpdatesUserProfileInformation;
-use Laravel\Fortify\Contracts\VerifyEmailViewResponse;
-use Laravel\Fortify\Http\Responses\SimpleViewResponse;
+use Jiny\Fortify\Contracts\ConfirmPasswordViewResponse;
+use Jiny\Fortify\Contracts\CreatesNewUsers;
+use Jiny\Fortify\Contracts\LoginViewResponse;
+use Jiny\Fortify\Contracts\RegisterViewResponse;
+use Jiny\Fortify\Contracts\RequestPasswordResetLinkViewResponse;
+use Jiny\Fortify\Contracts\ResetPasswordViewResponse;
+use Jiny\Fortify\Contracts\ResetsUserPasswords;
+use Jiny\Fortify\Contracts\TwoFactorChallengeViewResponse;
+use Jiny\Fortify\Contracts\UpdatesUserPasswords;
+use Jiny\Fortify\Contracts\UpdatesUserProfileInformation;
+use Jiny\Fortify\Contracts\VerifyEmailViewResponse;
+use Jiny\Fortify\Http\Responses\SimpleViewResponse;
 
 class Fortify
 {

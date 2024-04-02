@@ -1,10 +1,10 @@
 <?php
 
-namespace Laravel\Fortify\Console;
+namespace Jiny\Fortify\Console;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\ServiceProvider;
-use Laravel\Fortify\FortifyServiceProvider;
+use Jiny\Fortify\FortifyServiceProvider;
 use Symfony\Component\Console\Attribute\AsCommand;
 
 #[AsCommand(name: 'fortify:install')]

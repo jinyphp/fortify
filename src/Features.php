@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\Fortify;
+namespace Jiny\Fortify;
 
 class Features
 {

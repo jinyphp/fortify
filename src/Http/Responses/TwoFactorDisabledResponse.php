@@ -1,10 +1,10 @@
 <?php
 
-namespace Laravel\Fortify\Http\Responses;
+namespace Jiny\Fortify\Http\Responses;
 
 use Illuminate\Http\JsonResponse;
-use Laravel\Fortify\Contracts\TwoFactorLoginResponse as TwoFactorLoginResponseContract;
-use Laravel\Fortify\Fortify;
+use Jiny\Fortify\Contracts\TwoFactorLoginResponse as TwoFactorLoginResponseContract;
+use Jiny\Fortify\Fortify;
 
 class TwoFactorDisabledResponse implements TwoFactorLoginResponseContract
 {

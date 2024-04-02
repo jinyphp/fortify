@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\Fortify\Events;
+namespace Jiny\Fortify\Events;
 
 use Illuminate\Queue\SerializesModels;
 

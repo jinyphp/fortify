@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\Fortify\Http\Controllers;
+namespace Jiny\Fortify\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;

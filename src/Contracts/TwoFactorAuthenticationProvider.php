@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\Fortify\Contracts;
+namespace Jiny\Fortify\Contracts;
 
 interface TwoFactorAuthenticationProvider
 {

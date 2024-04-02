@@ -1,10 +1,10 @@
 <?php
 
-namespace Laravel\Fortify\Http\Responses;
+namespace Jiny\Fortify\Http\Responses;
 
 use Illuminate\Http\JsonResponse;
-use Laravel\Fortify\Contracts\PasswordConfirmedResponse as PasswordConfirmedResponseContract;
-use Laravel\Fortify\Fortify;
+use Jiny\Fortify\Contracts\PasswordConfirmedResponse as PasswordConfirmedResponseContract;
+use Jiny\Fortify\Fortify;
 
 class PasswordConfirmedResponse implements PasswordConfirmedResponseContract
 {

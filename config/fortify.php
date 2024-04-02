@@ -1,6 +1,6 @@
 <?php
 
-use Laravel\Fortify\Features;
+use Jiny\Fortify\Features;
 
 return [
     'guard' => 'web',

@@ -1,13 +1,13 @@
 <?php
 
-namespace Laravel\Fortify\Http\Controllers;
+namespace Jiny\Fortify\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
-use Laravel\Fortify\Actions\DisableTwoFactorAuthentication;
-use Laravel\Fortify\Actions\EnableTwoFactorAuthentication;
-use Laravel\Fortify\Contracts\TwoFactorDisabledResponse;
-use Laravel\Fortify\Contracts\TwoFactorEnabledResponse;
+use Jiny\Fortify\Actions\DisableTwoFactorAuthentication;
+use Jiny\Fortify\Actions\EnableTwoFactorAuthentication;
+use Jiny\Fortify\Contracts\TwoFactorDisabledResponse;
+use Jiny\Fortify\Contracts\TwoFactorEnabledResponse;
 
 class TwoFactorAuthenticationController extends Controller
 {
@@ -15,8 +15,8 @@ class TwoFactorAuthenticationController extends Controller
      * Enable two factor authentication for the user.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \Laravel\Fortify\Actions\EnableTwoFactorAuthentication  $enable
-     * @return \Laravel\Fortify\Contracts\TwoFactorEnabledResponse
+     * @param  \Jiny\Fortify\Actions\EnableTwoFactorAuthentication  $enable
+     * @return \Jiny\Fortify\Contracts\TwoFactorEnabledResponse
      */
     public function store(Request $request, EnableTwoFactorAuthentication $enable)
     {
@@ -29,8 +29,8 @@ class TwoFactorAuthenticationController extends Controller
      * Disable two factor authentication for the user.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \Laravel\Fortify\Actions\DisableTwoFactorAuthentication  $disable
-     * @return \Laravel\Fortify\Contracts\TwoFactorDisabledResponse
+     * @param  \Jiny\Fortify\Actions\DisableTwoFactorAuthentication  $disable
+     * @return \Jiny\Fortify\Contracts\TwoFactorDisabledResponse
      */
     public function destroy(Request $request, DisableTwoFactorAuthentication $disable)
     {

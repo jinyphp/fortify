@@ -1,12 +1,12 @@
 <?php
 
-namespace Laravel\Fortify\Http\Requests;
+namespace Jiny\Fortify\Http\Requests;
 
 use Illuminate\Contracts\Auth\StatefulGuard;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Http\Exceptions\HttpResponseException;
-use Laravel\Fortify\Contracts\FailedTwoFactorLoginResponse;
-use Laravel\Fortify\Contracts\TwoFactorAuthenticationProvider;
+use Jiny\Fortify\Contracts\FailedTwoFactorLoginResponse;
+use Jiny\Fortify\Contracts\TwoFactorAuthenticationProvider;
 
 class TwoFactorLoginRequest extends FormRequest
 {

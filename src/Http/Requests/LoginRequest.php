@@ -1,9 +1,9 @@
 <?php
 
-namespace Laravel\Fortify\Http\Requests;
+namespace Jiny\Fortify\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
-use Laravel\Fortify\Fortify;
+use Jiny\Fortify\Fortify;
 
 class LoginRequest extends FormRequest
 {

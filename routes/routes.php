@@ -1,25 +1,25 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use Laravel\Fortify\Features;
-use Laravel\Fortify\Http\Controllers\AuthenticatedSessionController;
-use Laravel\Fortify\Http\Controllers\ConfirmablePasswordController;
-use Laravel\Fortify\Http\Controllers\ConfirmedPasswordStatusController;
-use Laravel\Fortify\Http\Controllers\ConfirmedTwoFactorAuthenticationController;
-use Laravel\Fortify\Http\Controllers\EmailVerificationNotificationController;
-use Laravel\Fortify\Http\Controllers\EmailVerificationPromptController;
-use Laravel\Fortify\Http\Controllers\NewPasswordController;
-use Laravel\Fortify\Http\Controllers\PasswordController;
-use Laravel\Fortify\Http\Controllers\PasswordResetLinkController;
-use Laravel\Fortify\Http\Controllers\ProfileInformationController;
-use Laravel\Fortify\Http\Controllers\RecoveryCodeController;
-use Laravel\Fortify\Http\Controllers\RegisteredUserController;
-use Laravel\Fortify\Http\Controllers\TwoFactorAuthenticatedSessionController;
-use Laravel\Fortify\Http\Controllers\TwoFactorAuthenticationController;
-use Laravel\Fortify\Http\Controllers\TwoFactorQrCodeController;
-use Laravel\Fortify\Http\Controllers\TwoFactorSecretKeyController;
-use Laravel\Fortify\Http\Controllers\VerifyEmailController;
-use Laravel\Fortify\RoutePath;
+use Jiny\Fortify\Features;
+use Jiny\Fortify\Http\Controllers\AuthenticatedSessionController;
+use Jiny\Fortify\Http\Controllers\ConfirmablePasswordController;
+use Jiny\Fortify\Http\Controllers\ConfirmedPasswordStatusController;
+use Jiny\Fortify\Http\Controllers\ConfirmedTwoFactorAuthenticationController;
+use Jiny\Fortify\Http\Controllers\EmailVerificationNotificationController;
+use Jiny\Fortify\Http\Controllers\EmailVerificationPromptController;
+use Jiny\Fortify\Http\Controllers\NewPasswordController;
+use Jiny\Fortify\Http\Controllers\PasswordController;
+use Jiny\Fortify\Http\Controllers\PasswordResetLinkController;
+use Jiny\Fortify\Http\Controllers\ProfileInformationController;
+use Jiny\Fortify\Http\Controllers\RecoveryCodeController;
+use Jiny\Fortify\Http\Controllers\RegisteredUserController;
+use Jiny\Fortify\Http\Controllers\TwoFactorAuthenticatedSessionController;
+use Jiny\Fortify\Http\Controllers\TwoFactorAuthenticationController;
+use Jiny\Fortify\Http\Controllers\TwoFactorQrCodeController;
+use Jiny\Fortify\Http\Controllers\TwoFactorSecretKeyController;
+use Jiny\Fortify\Http\Controllers\VerifyEmailController;
+use Jiny\Fortify\RoutePath;
 
 Route::group(['middleware' => config('fortify.middleware', ['web'])], function () {
     $enableViews = config('fortify.views', true);

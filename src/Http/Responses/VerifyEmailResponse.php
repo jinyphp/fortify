@@ -1,10 +1,10 @@
 <?php
 
-namespace Laravel\Fortify\Http\Responses;
+namespace Jiny\Fortify\Http\Responses;
 
 use Illuminate\Http\JsonResponse;
-use Laravel\Fortify\Contracts\VerifyEmailResponse as VerifyEmailResponseContract;
-use Laravel\Fortify\Fortify;
+use Jiny\Fortify\Contracts\VerifyEmailResponse as VerifyEmailResponseContract;
+use Jiny\Fortify\Fortify;
 
 class VerifyEmailResponse implements VerifyEmailResponseContract
 {

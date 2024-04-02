@@ -1,10 +1,10 @@
 <?php
 
-namespace Laravel\Fortify\Actions;
+namespace Jiny\Fortify\Actions;
 
 use Illuminate\Support\Collection;
-use Laravel\Fortify\Events\RecoveryCodesGenerated;
-use Laravel\Fortify\RecoveryCode;
+use Jiny\Fortify\Events\RecoveryCodesGenerated;
+use Jiny\Fortify\RecoveryCode;
 
 class GenerateNewRecoveryCodes
 {

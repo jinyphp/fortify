@@ -1,9 +1,9 @@
 <?php
 
-namespace Laravel\Fortify\Http\Responses;
+namespace Jiny\Fortify\Http\Responses;
 
-use Laravel\Fortify\Contracts\LoginResponse as LoginResponseContract;
-use Laravel\Fortify\Fortify;
+use Jiny\Fortify\Contracts\LoginResponse as LoginResponseContract;
+use Jiny\Fortify\Fortify;
 
 class LoginResponse implements LoginResponseContract
 {

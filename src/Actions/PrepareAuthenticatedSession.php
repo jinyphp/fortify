@@ -1,22 +1,22 @@
 <?php
 
-namespace Laravel\Fortify\Actions;
+namespace Jiny\Fortify\Actions;
 
-use Laravel\Fortify\LoginRateLimiter;
+use Jiny\Fortify\LoginRateLimiter;
 
 class PrepareAuthenticatedSession
 {
     /**
      * The login rate limiter instance.
      *
-     * @var \Laravel\Fortify\LoginRateLimiter
+     * @var \Jiny\Fortify\LoginRateLimiter
      */
     protected $limiter;
 
     /**
      * Create a new class instance.
      *
-     * @param  \Laravel\Fortify\LoginRateLimiter  $limiter
+     * @param  \Jiny\Fortify\LoginRateLimiter  $limiter
      * @return void
      */
     public function __construct(LoginRateLimiter $limiter)

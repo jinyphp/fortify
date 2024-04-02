@@ -1,15 +1,15 @@
 <?php
 
-namespace Laravel\Fortify\Http\Responses;
+namespace Jiny\Fortify\Http\Responses;
 
 use Illuminate\Contracts\Support\Responsable;
-use Laravel\Fortify\Contracts\ConfirmPasswordViewResponse;
-use Laravel\Fortify\Contracts\LoginViewResponse;
-use Laravel\Fortify\Contracts\RegisterViewResponse;
-use Laravel\Fortify\Contracts\RequestPasswordResetLinkViewResponse;
-use Laravel\Fortify\Contracts\ResetPasswordViewResponse;
-use Laravel\Fortify\Contracts\TwoFactorChallengeViewResponse;
-use Laravel\Fortify\Contracts\VerifyEmailViewResponse;
+use Jiny\Fortify\Contracts\ConfirmPasswordViewResponse;
+use Jiny\Fortify\Contracts\LoginViewResponse;
+use Jiny\Fortify\Contracts\RegisterViewResponse;
+use Jiny\Fortify\Contracts\RequestPasswordResetLinkViewResponse;
+use Jiny\Fortify\Contracts\ResetPasswordViewResponse;
+use Jiny\Fortify\Contracts\TwoFactorChallengeViewResponse;
+use Jiny\Fortify\Contracts\VerifyEmailViewResponse;
 
 class SimpleViewResponse implements
     LoginViewResponse,

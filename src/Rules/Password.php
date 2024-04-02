@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\Fortify\Rules;
+namespace Jiny\Fortify\Rules;
 
 use Illuminate\Contracts\Validation\Rule;
 use Illuminate\Support\Str;

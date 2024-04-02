@@ -1,12 +1,12 @@
 <?php
 
-namespace Laravel\Fortify\Actions;
+namespace Jiny\Fortify\Actions;
 
 use Illuminate\Auth\Events\Failed;
 use Illuminate\Contracts\Auth\StatefulGuard;
 use Illuminate\Validation\ValidationException;
-use Laravel\Fortify\Fortify;
-use Laravel\Fortify\LoginRateLimiter;
+use Jiny\Fortify\Fortify;
+use Jiny\Fortify\LoginRateLimiter;
 
 class AttemptToAuthenticate
 {
@@ -20,7 +20,7 @@ class AttemptToAuthenticate
     /**
      * The login rate limiter instance.
      *
-     * @var \Laravel\Fortify\LoginRateLimiter
+     * @var \Jiny\Fortify\LoginRateLimiter
      */
     protected $limiter;
 
@@ -28,7 +28,7 @@ class AttemptToAuthenticate
      * Create a new controller instance.
      *
      * @param  \Illuminate\Contracts\Auth\StatefulGuard  $guard
-     * @param  \Laravel\Fortify\LoginRateLimiter  $limiter
+     * @param  \Jiny\Fortify\LoginRateLimiter  $limiter
      * @return void
      */
     public function __construct(StatefulGuard $guard, LoginRateLimiter $limiter)

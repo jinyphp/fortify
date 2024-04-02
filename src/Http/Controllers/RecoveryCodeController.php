@@ -1,11 +1,11 @@
 <?php
 
-namespace Laravel\Fortify\Http\Controllers;
+namespace Jiny\Fortify\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
-use Laravel\Fortify\Actions\GenerateNewRecoveryCodes;
-use Laravel\Fortify\Contracts\RecoveryCodesGeneratedResponse;
+use Jiny\Fortify\Actions\GenerateNewRecoveryCodes;
+use Jiny\Fortify\Contracts\RecoveryCodesGeneratedResponse;
 
 class RecoveryCodeController extends Controller
 {
@@ -31,8 +31,8 @@ class RecoveryCodeController extends Controller
      * Generate a fresh set of two factor authentication recovery codes.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \Laravel\Fortify\Actions\GenerateNewRecoveryCodes  $generate
-     * @return \Laravel\Fortify\Contracts\RecoveryCodesGeneratedResponse
+     * @param  \Jiny\Fortify\Actions\GenerateNewRecoveryCodes  $generate
+     * @return \Jiny\Fortify\Contracts\RecoveryCodesGeneratedResponse
      */
     public function store(Request $request, GenerateNewRecoveryCodes $generate)
     {

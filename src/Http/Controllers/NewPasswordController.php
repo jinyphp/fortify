@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\Fortify\Http\Controllers;
+namespace Jiny\Fortify\Http\Controllers;
 
 use Illuminate\Contracts\Auth\PasswordBroker;
 use Illuminate\Contracts\Auth\StatefulGuard;
@@ -8,12 +8,12 @@ use Illuminate\Contracts\Support\Responsable;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\Password;
-use Laravel\Fortify\Actions\CompletePasswordReset;
-use Laravel\Fortify\Contracts\FailedPasswordResetResponse;
-use Laravel\Fortify\Contracts\PasswordResetResponse;
-use Laravel\Fortify\Contracts\ResetPasswordViewResponse;
-use Laravel\Fortify\Contracts\ResetsUserPasswords;
-use Laravel\Fortify\Fortify;
+use Jiny\Fortify\Actions\CompletePasswordReset;
+use Jiny\Fortify\Contracts\FailedPasswordResetResponse;
+use Jiny\Fortify\Contracts\PasswordResetResponse;
+use Jiny\Fortify\Contracts\ResetPasswordViewResponse;
+use Jiny\Fortify\Contracts\ResetsUserPasswords;
+use Jiny\Fortify\Fortify;
 
 class NewPasswordController extends Controller
 {
@@ -39,7 +39,7 @@ class NewPasswordController extends Controller
      * Show the new password view.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @return \Laravel\Fortify\Contracts\ResetPasswordViewResponse
+     * @return \Jiny\Fortify\Contracts\ResetPasswordViewResponse
      */
     public function create(Request $request): ResetPasswordViewResponse
     {

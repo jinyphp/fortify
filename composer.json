@@ -1,5 +1,5 @@
 {
-    "name": "laravel/fortify",
+    "name": "jiny/fortify",
     "description": "Backend controllers and scaffolding for Laravel authentication.",
     "keywords": ["laravel", "auth"],
     "license": "MIT",
@@ -29,12 +29,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Laravel\\Fortify\\": "src/"
+            "Jiny\\Fortify\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Laravel\\Fortify\\Tests\\": "tests/",
+            "Jiny\\Fortify\\Tests\\": "tests/",
             "App\\": "workbench/app/",
             "Database\\Factories\\": "workbench/database/factories/"
         },
@@ -46,7 +46,7 @@
         },
         "laravel": {
             "providers": [
-                "Laravel\\Fortify\\FortifyServiceProvider"
+                "Jiny\\Fortify\\FortifyServiceProvider"
             ]
         }
     },

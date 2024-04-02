@@ -1,12 +1,12 @@
 <?php
 
-namespace Laravel\Fortify\Http\Controllers;
+namespace Jiny\Fortify\Http\Controllers;
 
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
-use Laravel\Fortify\Contracts\EmailVerificationNotificationSentResponse;
-use Laravel\Fortify\Fortify;
+use Jiny\Fortify\Contracts\EmailVerificationNotificationSentResponse;
+use Jiny\Fortify\Fortify;
 
 class EmailVerificationNotificationController extends Controller
 {

@@ -1,53 +1,53 @@
 <?php
 
-namespace Laravel\Fortify;
+namespace Jiny\Fortify;
 
 use Illuminate\Contracts\Auth\StatefulGuard;
 use Illuminate\Contracts\Cache\Repository;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
-use Laravel\Fortify\Contracts\EmailVerificationNotificationSentResponse as EmailVerificationNotificationSentResponseContract;
-use Laravel\Fortify\Contracts\FailedPasswordConfirmationResponse as FailedPasswordConfirmationResponseContract;
-use Laravel\Fortify\Contracts\FailedPasswordResetLinkRequestResponse as FailedPasswordResetLinkRequestResponseContract;
-use Laravel\Fortify\Contracts\FailedPasswordResetResponse as FailedPasswordResetResponseContract;
-use Laravel\Fortify\Contracts\FailedTwoFactorLoginResponse as FailedTwoFactorLoginResponseContract;
-use Laravel\Fortify\Contracts\LockoutResponse as LockoutResponseContract;
-use Laravel\Fortify\Contracts\LoginResponse as LoginResponseContract;
-use Laravel\Fortify\Contracts\LogoutResponse as LogoutResponseContract;
-use Laravel\Fortify\Contracts\PasswordConfirmedResponse as PasswordConfirmedResponseContract;
-use Laravel\Fortify\Contracts\PasswordResetResponse as PasswordResetResponseContract;
-use Laravel\Fortify\Contracts\PasswordUpdateResponse as PasswordUpdateResponseContract;
-use Laravel\Fortify\Contracts\ProfileInformationUpdatedResponse as ProfileInformationUpdatedResponseContract;
-use Laravel\Fortify\Contracts\RecoveryCodesGeneratedResponse as RecoveryCodesGeneratedResponseContract;
-use Laravel\Fortify\Contracts\RegisterResponse as RegisterResponseContract;
-use Laravel\Fortify\Contracts\SuccessfulPasswordResetLinkRequestResponse as SuccessfulPasswordResetLinkRequestResponseContract;
-use Laravel\Fortify\Contracts\TwoFactorAuthenticationProvider as TwoFactorAuthenticationProviderContract;
-use Laravel\Fortify\Contracts\TwoFactorConfirmedResponse as TwoFactorConfirmedResponseContract;
-use Laravel\Fortify\Contracts\TwoFactorDisabledResponse as TwoFactorDisabledResponseContract;
-use Laravel\Fortify\Contracts\TwoFactorEnabledResponse as TwoFactorEnabledResponseContract;
-use Laravel\Fortify\Contracts\TwoFactorLoginResponse as TwoFactorLoginResponseContract;
-use Laravel\Fortify\Contracts\VerifyEmailResponse as VerifyEmailResponseContract;
-use Laravel\Fortify\Http\Responses\EmailVerificationNotificationSentResponse;
-use Laravel\Fortify\Http\Responses\FailedPasswordConfirmationResponse;
-use Laravel\Fortify\Http\Responses\FailedPasswordResetLinkRequestResponse;
-use Laravel\Fortify\Http\Responses\FailedPasswordResetResponse;
-use Laravel\Fortify\Http\Responses\FailedTwoFactorLoginResponse;
-use Laravel\Fortify\Http\Responses\LockoutResponse;
-use Laravel\Fortify\Http\Responses\LoginResponse;
-use Laravel\Fortify\Http\Responses\LogoutResponse;
-use Laravel\Fortify\Http\Responses\PasswordConfirmedResponse;
-use Laravel\Fortify\Http\Responses\PasswordResetResponse;
-use Laravel\Fortify\Http\Responses\PasswordUpdateResponse;
-use Laravel\Fortify\Http\Responses\ProfileInformationUpdatedResponse;
-use Laravel\Fortify\Http\Responses\RecoveryCodesGeneratedResponse;
-use Laravel\Fortify\Http\Responses\RegisterResponse;
-use Laravel\Fortify\Http\Responses\SuccessfulPasswordResetLinkRequestResponse;
-use Laravel\Fortify\Http\Responses\TwoFactorConfirmedResponse;
-use Laravel\Fortify\Http\Responses\TwoFactorDisabledResponse;
-use Laravel\Fortify\Http\Responses\TwoFactorEnabledResponse;
-use Laravel\Fortify\Http\Responses\TwoFactorLoginResponse;
-use Laravel\Fortify\Http\Responses\VerifyEmailResponse;
+use Jiny\Fortify\Contracts\EmailVerificationNotificationSentResponse as EmailVerificationNotificationSentResponseContract;
+use Jiny\Fortify\Contracts\FailedPasswordConfirmationResponse as FailedPasswordConfirmationResponseContract;
+use Jiny\Fortify\Contracts\FailedPasswordResetLinkRequestResponse as FailedPasswordResetLinkRequestResponseContract;
+use Jiny\Fortify\Contracts\FailedPasswordResetResponse as FailedPasswordResetResponseContract;
+use Jiny\Fortify\Contracts\FailedTwoFactorLoginResponse as FailedTwoFactorLoginResponseContract;
+use Jiny\Fortify\Contracts\LockoutResponse as LockoutResponseContract;
+use Jiny\Fortify\Contracts\LoginResponse as LoginResponseContract;
+use Jiny\Fortify\Contracts\LogoutResponse as LogoutResponseContract;
+use Jiny\Fortify\Contracts\PasswordConfirmedResponse as PasswordConfirmedResponseContract;
+use Jiny\Fortify\Contracts\PasswordResetResponse as PasswordResetResponseContract;
+use Jiny\Fortify\Contracts\PasswordUpdateResponse as PasswordUpdateResponseContract;
+use Jiny\Fortify\Contracts\ProfileInformationUpdatedResponse as ProfileInformationUpdatedResponseContract;
+use Jiny\Fortify\Contracts\RecoveryCodesGeneratedResponse as RecoveryCodesGeneratedResponseContract;
+use Jiny\Fortify\Contracts\RegisterResponse as RegisterResponseContract;
+use Jiny\Fortify\Contracts\SuccessfulPasswordResetLinkRequestResponse as SuccessfulPasswordResetLinkRequestResponseContract;
+use Jiny\Fortify\Contracts\TwoFactorAuthenticationProvider as TwoFactorAuthenticationProviderContract;
+use Jiny\Fortify\Contracts\TwoFactorConfirmedResponse as TwoFactorConfirmedResponseContract;
+use Jiny\Fortify\Contracts\TwoFactorDisabledResponse as TwoFactorDisabledResponseContract;
+use Jiny\Fortify\Contracts\TwoFactorEnabledResponse as TwoFactorEnabledResponseContract;
+use Jiny\Fortify\Contracts\TwoFactorLoginResponse as TwoFactorLoginResponseContract;
+use Jiny\Fortify\Contracts\VerifyEmailResponse as VerifyEmailResponseContract;
+use Jiny\Fortify\Http\Responses\EmailVerificationNotificationSentResponse;
+use Jiny\Fortify\Http\Responses\FailedPasswordConfirmationResponse;
+use Jiny\Fortify\Http\Responses\FailedPasswordResetLinkRequestResponse;
+use Jiny\Fortify\Http\Responses\FailedPasswordResetResponse;
+use Jiny\Fortify\Http\Responses\FailedTwoFactorLoginResponse;
+use Jiny\Fortify\Http\Responses\LockoutResponse;
+use Jiny\Fortify\Http\Responses\LoginResponse;
+use Jiny\Fortify\Http\Responses\LogoutResponse;
+use Jiny\Fortify\Http\Responses\PasswordConfirmedResponse;
+use Jiny\Fortify\Http\Responses\PasswordResetResponse;
+use Jiny\Fortify\Http\Responses\PasswordUpdateResponse;
+use Jiny\Fortify\Http\Responses\ProfileInformationUpdatedResponse;
+use Jiny\Fortify\Http\Responses\RecoveryCodesGeneratedResponse;
+use Jiny\Fortify\Http\Responses\RegisterResponse;
+use Jiny\Fortify\Http\Responses\SuccessfulPasswordResetLinkRequestResponse;
+use Jiny\Fortify\Http\Responses\TwoFactorConfirmedResponse;
+use Jiny\Fortify\Http\Responses\TwoFactorDisabledResponse;
+use Jiny\Fortify\Http\Responses\TwoFactorEnabledResponse;
+use Jiny\Fortify\Http\Responses\TwoFactorLoginResponse;
+use Jiny\Fortify\Http\Responses\VerifyEmailResponse;
 use PragmaRX\Google2FA\Google2FA;
 
 class FortifyServiceProvider extends ServiceProvider
@@ -154,7 +154,7 @@ class FortifyServiceProvider extends ServiceProvider
     {
         if (Fortify::$registersRoutes) {
             Route::group([
-                'namespace' => 'Laravel\Fortify\Http\Controllers',
+                'namespace' => 'Jiny\Fortify\Http\Controllers',
                 'domain' => config('fortify.domain', null),
                 'prefix' => config('fortify.prefix'),
             ], function () {

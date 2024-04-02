@@ -1,9 +1,9 @@
 <?php
 
-namespace Laravel\Fortify\Actions;
+namespace Jiny\Fortify\Actions;
 
 use Illuminate\Contracts\Auth\StatefulGuard;
-use Laravel\Fortify\Fortify;
+use Jiny\Fortify\Fortify;
 
 class ConfirmPassword
 {

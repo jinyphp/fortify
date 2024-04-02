@@ -1,15 +1,15 @@
 <?php
 
-namespace Laravel\Fortify\Http\Controllers;
+namespace Jiny\Fortify\Http\Controllers;
 
 use Illuminate\Contracts\Auth\StatefulGuard;
 use Illuminate\Http\Exceptions\HttpResponseException;
 use Illuminate\Routing\Controller;
-use Laravel\Fortify\Contracts\FailedTwoFactorLoginResponse;
-use Laravel\Fortify\Contracts\TwoFactorChallengeViewResponse;
-use Laravel\Fortify\Contracts\TwoFactorLoginResponse;
-use Laravel\Fortify\Events\RecoveryCodeReplaced;
-use Laravel\Fortify\Http\Requests\TwoFactorLoginRequest;
+use Jiny\Fortify\Contracts\FailedTwoFactorLoginResponse;
+use Jiny\Fortify\Contracts\TwoFactorChallengeViewResponse;
+use Jiny\Fortify\Contracts\TwoFactorLoginResponse;
+use Jiny\Fortify\Events\RecoveryCodeReplaced;
+use Jiny\Fortify\Http\Requests\TwoFactorLoginRequest;
 
 class TwoFactorAuthenticatedSessionController extends Controller
 {
@@ -34,8 +34,8 @@ class TwoFactorAuthenticatedSessionController extends Controller
     /**
      * Show the two factor authentication challenge view.
      *
-     * @param  \Laravel\Fortify\Http\Requests\TwoFactorLoginRequest  $request
-     * @return \Laravel\Fortify\Contracts\TwoFactorChallengeViewResponse
+     * @param  \Jiny\Fortify\Http\Requests\TwoFactorLoginRequest  $request
+     * @return \Jiny\Fortify\Contracts\TwoFactorChallengeViewResponse
      */
     public function create(TwoFactorLoginRequest $request): TwoFactorChallengeViewResponse
     {
@@ -49,7 +49,7 @@ class TwoFactorAuthenticatedSessionController extends Controller
     /**
      * Attempt to authenticate a new session using the two factor authentication code.
      *
-     * @param  \Laravel\Fortify\Http\Requests\TwoFactorLoginRequest  $request
+     * @param  \Jiny\Fortify\Http\Requests\TwoFactorLoginRequest  $request
      * @return mixed
      */
     public function store(TwoFactorLoginRequest $request)

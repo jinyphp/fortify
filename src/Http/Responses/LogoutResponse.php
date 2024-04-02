@@ -1,10 +1,10 @@
 <?php
 
-namespace Laravel\Fortify\Http\Responses;
+namespace Jiny\Fortify\Http\Responses;
 
 use Illuminate\Http\JsonResponse;
-use Laravel\Fortify\Contracts\LogoutResponse as LogoutResponseContract;
-use Laravel\Fortify\Fortify;
+use Jiny\Fortify\Contracts\LogoutResponse as LogoutResponseContract;
+use Jiny\Fortify\Fortify;
 
 class LogoutResponse implements LogoutResponseContract
 {

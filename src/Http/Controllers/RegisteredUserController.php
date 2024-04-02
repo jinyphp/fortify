@@ -1,16 +1,16 @@
 <?php
 
-namespace Laravel\Fortify\Http\Controllers;
+namespace Jiny\Fortify\Http\Controllers;
 
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Contracts\Auth\StatefulGuard;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Str;
-use Laravel\Fortify\Contracts\CreatesNewUsers;
-use Laravel\Fortify\Contracts\RegisterResponse;
-use Laravel\Fortify\Contracts\RegisterViewResponse;
-use Laravel\Fortify\Fortify;
+use Jiny\Fortify\Contracts\CreatesNewUsers;
+use Jiny\Fortify\Contracts\RegisterResponse;
+use Jiny\Fortify\Contracts\RegisterViewResponse;
+use Jiny\Fortify\Fortify;
 
 class RegisteredUserController extends Controller
 {
@@ -36,7 +36,7 @@ class RegisteredUserController extends Controller
      * Show the registration view.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @return \Laravel\Fortify\Contracts\RegisterViewResponse
+     * @return \Jiny\Fortify\Contracts\RegisterViewResponse
      */
     public function create(Request $request): RegisterViewResponse
     {
@@ -47,8 +47,8 @@ class RegisteredUserController extends Controller
      * Create a new registered user.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \Laravel\Fortify\Contracts\CreatesNewUsers  $creator
-     * @return \Laravel\Fortify\Contracts\RegisterResponse
+     * @param  \Jiny\Fortify\Contracts\CreatesNewUsers  $creator
+     * @return \Jiny\Fortify\Contracts\RegisterResponse
      */
     public function store(Request $request,
                           CreatesNewUsers $creator): RegisterResponse

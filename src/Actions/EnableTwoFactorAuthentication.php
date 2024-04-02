@@ -1,25 +1,25 @@
 <?php
 
-namespace Laravel\Fortify\Actions;
+namespace Jiny\Fortify\Actions;
 
 use Illuminate\Support\Collection;
-use Laravel\Fortify\Contracts\TwoFactorAuthenticationProvider;
-use Laravel\Fortify\Events\TwoFactorAuthenticationEnabled;
-use Laravel\Fortify\RecoveryCode;
+use Jiny\Fortify\Contracts\TwoFactorAuthenticationProvider;
+use Jiny\Fortify\Events\TwoFactorAuthenticationEnabled;
+use Jiny\Fortify\RecoveryCode;
 
 class EnableTwoFactorAuthentication
 {
     /**
      * The two factor authentication provider.
      *
-     * @var \Laravel\Fortify\Contracts\TwoFactorAuthenticationProvider
+     * @var \Jiny\Fortify\Contracts\TwoFactorAuthenticationProvider
      */
     protected $provider;
 
     /**
      * Create a new action instance.
      *
-     * @param  \Laravel\Fortify\Contracts\TwoFactorAuthenticationProvider  $provider
+     * @param  \Jiny\Fortify\Contracts\TwoFactorAuthenticationProvider  $provider
      * @return void
      */
     public function __construct(TwoFactorAuthenticationProvider $provider)

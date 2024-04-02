@@ -1,10 +1,10 @@
 <?php
 
-namespace Laravel\Fortify\Http\Responses;
+namespace Jiny\Fortify\Http\Responses;
 
 use Illuminate\Http\JsonResponse;
-use Laravel\Fortify\Contracts\ProfileInformationUpdatedResponse as ProfileInformationUpdatedResponseContract;
-use Laravel\Fortify\Fortify;
+use Jiny\Fortify\Contracts\ProfileInformationUpdatedResponse as ProfileInformationUpdatedResponseContract;
+use Jiny\Fortify\Fortify;
 
 class ProfileInformationUpdatedResponse implements ProfileInformationUpdatedResponseContract
 {

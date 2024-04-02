@@ -1,26 +1,26 @@
 <?php
 
-namespace Laravel\Fortify\Http\Responses;
+namespace Jiny\Fortify\Http\Responses;
 
 use Illuminate\Http\Response;
 use Illuminate\Validation\ValidationException;
-use Laravel\Fortify\Contracts\LockoutResponse as LockoutResponseContract;
-use Laravel\Fortify\Fortify;
-use Laravel\Fortify\LoginRateLimiter;
+use Jiny\Fortify\Contracts\LockoutResponse as LockoutResponseContract;
+use Jiny\Fortify\Fortify;
+use Jiny\Fortify\LoginRateLimiter;
 
 class LockoutResponse implements LockoutResponseContract
 {
     /**
      * The login rate limiter instance.
      *
-     * @var \Laravel\Fortify\LoginRateLimiter
+     * @var \Jiny\Fortify\LoginRateLimiter
      */
     protected $limiter;
 
     /**
      * Create a new response instance.
      *
-     * @param  \Laravel\Fortify\LoginRateLimiter  $limiter
+     * @param  \Jiny\Fortify\LoginRateLimiter  $limiter
      * @return void
      */
     public function __construct(LoginRateLimiter $limiter)

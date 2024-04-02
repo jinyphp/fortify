@@ -1,9 +1,9 @@
 <?php
 
-namespace Laravel\Fortify\Actions;
+namespace Jiny\Fortify\Actions;
 
 use Illuminate\Support\Str;
-use Laravel\Fortify\Fortify;
+use Jiny\Fortify\Fortify;
 
 class CanonicalizeUsername
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace Laravel\Fortify\Actions;
+namespace Jiny\Fortify\Actions;
 
-use Laravel\Fortify\Events\TwoFactorAuthenticationDisabled;
-use Laravel\Fortify\Fortify;
+use Jiny\Fortify\Events\TwoFactorAuthenticationDisabled;
+use Jiny\Fortify\Fortify;
 
 class DisableTwoFactorAuthentication
 {

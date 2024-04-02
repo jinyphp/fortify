@@ -1,15 +1,15 @@
 <?php
 
-namespace Laravel\Fortify\Http\Controllers;
+namespace Jiny\Fortify\Http\Controllers;
 
 use Illuminate\Contracts\Auth\StatefulGuard;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\Date;
-use Laravel\Fortify\Actions\ConfirmPassword;
-use Laravel\Fortify\Contracts\ConfirmPasswordViewResponse;
-use Laravel\Fortify\Contracts\FailedPasswordConfirmationResponse;
-use Laravel\Fortify\Contracts\PasswordConfirmedResponse;
+use Jiny\Fortify\Actions\ConfirmPassword;
+use Jiny\Fortify\Contracts\ConfirmPasswordViewResponse;
+use Jiny\Fortify\Contracts\FailedPasswordConfirmationResponse;
+use Jiny\Fortify\Contracts\PasswordConfirmedResponse;
 
 class ConfirmablePasswordController extends Controller
 {
@@ -35,7 +35,7 @@ class ConfirmablePasswordController extends Controller
      * Show the confirm password view.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @return \Laravel\Fortify\Contracts\ConfirmPasswordViewResponse
+     * @return \Jiny\Fortify\Contracts\ConfirmPasswordViewResponse
      */
     public function show(Request $request)
     {
