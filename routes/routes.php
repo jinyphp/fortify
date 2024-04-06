@@ -21,6 +21,7 @@ use Jiny\Fortify\Http\Controllers\TwoFactorSecretKeyController;
 use Jiny\Fortify\Http\Controllers\VerifyEmailController;
 use Jiny\Fortify\RoutePath;
 
+/*
 Route::group(['middleware' => config('fortify.middleware', ['web'])], function () {
     $enableViews = config('fortify.views', true);
 
@@ -168,3 +169,5 @@ Route::group(['middleware' => config('fortify.middleware', ['web'])], function (
             ->middleware($twoFactorMiddleware);
     }
 });
+
+*/
